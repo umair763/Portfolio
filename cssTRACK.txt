@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding-top: 6%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.807), rgba(122, 0, 128, 0.807));
+    font-family: Arial, sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.borders {
+    /* width: calc(100vw - 8px); */
+    width: auto;
+    /* height: calc(100vh - 8px); */
+    height: 100%;
+    margin: 4px;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(128, 0, 128), blue);
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+.main-left-container {
+    background-color: rgb(9, 129, 241);
+    height: auto;
+}
+.img-container {
+    background-color: yellowgreen;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -19%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    background-image: url('images/myimg1.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.left-container {
+    /* z-index: 1; */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 300px;
+}
+.name-det-links {
+    background-color: #c7e5ff;
+    text-align: center;
+    justify-content: center;
+    padding-top: 24%;
+    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-weight: bolder;
+    font-size: 18px;
+}
+@font-face {
+    font-family: 'Caros Light';
+    src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot');
+    src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot?#iefix') format('embedded-opentype'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.woff2') format('woff2'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.woff') format('woff'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.ttf') format('truetype'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.svg#Caros Light') format('svg');
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 35px;
+  border-radius:50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
