@@ -214,14 +214,16 @@ body {
     justify-content: flex-end;
     border-radius: 15px;
     /* width: 420px; */
-    width: auto;
+    /* width: auto; */
     padding-left: 2%;
     padding-right: 2%;
 }
 
 .iconn {
     display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    width: 4.5cap;
+    /* flex-direction: column; */
     align-items: flex-end; /* Align items to the right */
     background-color: rgb(224, 224, 224);
     border-radius: 15px;
@@ -331,5 +333,10 @@ body {
     }
     .main-section {
         top: 24%;
+    }
+}
+@media screen and (min-width: 488px) {
+    .iconn{
+        width: 20%;
     }
 }
