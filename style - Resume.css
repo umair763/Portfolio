@@ -302,7 +302,7 @@ body {
 }
 /* ////////////note:: horizontals percentage bars///////////////////////////// */
 .progress-container {
-    width: 265px; /* Adjust width as needed */
+    width: 90%; /* Adjust width as needed */
     height: 6px; /* Adjust height as needed */
     background-color: #e5e5e5;
     border-radius: 10px;

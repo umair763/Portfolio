@@ -1,6 +1,5 @@
 /* //////////////////note:: font style/////////////////////// */
 
-
 @font-face {
     font-family: 'Caros Light';
     src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot');
@@ -26,7 +25,7 @@ body {
     background-size: cover;
     font-family: Arial, sans-serif;
 }
- 
+
 .borders {
     /* width: calc(100vw - 8px); */
     /* width: auto; */
@@ -88,7 +87,7 @@ body {
     text-decoration: none;
     margin: 5px 2px;
     margin-bottom: 8%;
-} 
+}
 
 .fa:hover {
     opacity: 0.7;
@@ -197,7 +196,7 @@ body {
     background-color: transparent;
     height: 320px;
     border-radius: 15px;
-} 
+}
 /* //////////////////note:: Second section//////////////////// */
 
 /* //////////////////note:: horzontal container-1//////////// */
@@ -364,12 +363,29 @@ input[type='text']:focus {
 .icon-box:hover {
     background-color: rgb(224, 224, 224);
 }
+.txt-area {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    height: 1.5em; /* Adjust the height as needed */
+    line-height: 1.5em; /* Match the line-height with the height */
+    padding: 0; /* Remove any padding */
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.txt-area:focus {
+    outline: none;
+    border-bottom: 1px solid grey;
+}
 .footer-container {
     background-color: rgb(224, 224, 224);
     border-radius: 15px;
     padding: 5px;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     /* margin-top: -1.5%; */
     /* margin-left: 1%;
     margin-right: 1%;
@@ -378,7 +394,7 @@ input[type='text']:focus {
 }
 /* //////////////////note:: responsive media query//////////////////// */
 @media (min-width: 1025px) and (max-width: 1366px) and (max-height: 768px) {
-    .text{
+    .text {
         max-width: 130px;
     }
     .horizontal-container {
