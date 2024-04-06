@@ -10,7 +10,7 @@ function triggerScrollEvent() {
 // Trigger the scroll event after the page is loaded
 window.onload = function () {
     triggerScrollEvent();
-};
+}; 
 // Wait for the page to fully load
 window.addEventListener('load', () => { 
     // Add a class to the images to trigger the transition effect

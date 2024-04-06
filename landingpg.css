@@ -1,17 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(images/darkbbg2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
-    color: white;
-    justify-content: center;
-    align-items: center; /* Center content horizontally */
-    min-height: 100vh; /* Ensure viewport height */
-    height: 1200px;
-    background-color: black;
-}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -21,20 +8,23 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: rgb(171, 171, 171);
 }
-.borders {
-    /* width: calc(100vw - 8px); */
-    width: auto;
-    /* height: calc(100vh - 8px); */
-    height: 1110px;
-    margin: 4px;
-    border: 15px solid transparent;
-    border-image: linear-gradient(to bottom right, rgb(128, 0, 128), blue);
-    /* border-image: linear-gradient(to bottom right, black,black); */
-    border-image-slice: 1;
-    box-sizing: border-box;
-    z-index: 999;
+body {
+    margin: 0;
+    background-image: url(images/darkbbg2.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
+.borders {
+    /* width: calc(100vw - 8px); */
+    /* width: auto; */
+    /* height: calc(100vh - 8px); */
+    /* height: 100%; */
+    /* margin: 4px; */
+    border: 15px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(128, 0, 128), blue);
+    border-image-slice: 1;
+}
 .vignette-border {
     position: fixed; /* Ensure the border stays fixed */
     top: 0;
