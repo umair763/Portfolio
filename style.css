@@ -222,7 +222,7 @@ body {
 .iconn {
     display: flex;
     max-width: 100%;
-    width: 4.5cap;
+    /* width: 4.5cap; */
     /* flex-direction: column; */
     align-items: flex-end; /* Align items to the right */
     background-color: rgb(224, 224, 224);
@@ -335,8 +335,8 @@ body {
         top: 24%;
     }
 }
-@media screen and (min-width: 488px) {
-    .iconn{
-        width: 20%;
+@media screen and (max-width: 441px) {
+    .iconn {
+        width: 4cap;
     }
 }
