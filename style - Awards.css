@@ -1,7 +1,6 @@
 /* //////////////////note:: font style/////////////////////// */
 
-
-@font-face { 
+@font-face {
     font-family: 'Caros Light';
     src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot');
     src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot?#iefix') format('embedded-opentype'),
@@ -20,7 +19,7 @@
 ::-webkit-scrollbar-thumb {
     background-color: rgb(171, 171, 171);
 }
-body { 
+body {
     margin: 0;
     background-image: url(images/bg6.jpeg);
     background-size: cover;
@@ -197,7 +196,7 @@ body {
     background-color: transparent;
     height: 320px;
     border-radius: 15px;
-} 
+}
 /* //////////////////note:: Second section//////////////////// */
 
 /* //////////////////note:: horzontal container-1//////////// */
@@ -228,7 +227,7 @@ body {
     border-radius: 15px;
     text-align: center;
     justify-content: center;
-    padding-left: 15px;
+    padding-left: 15px; 
     padding-right: 15px;
     padding-bottom: 2px;
     margin-top: 3%;
@@ -236,11 +235,19 @@ body {
     margin-right: 2px;
     margin-bottom: 3%;
 }
+
 .iconn:hover {
-    color: white;
     background-color: rgb(91, 206, 254);
-    /* background-color: linear-gradient(to bottom right, red, orange); Red to orange gradient on hover */
+    
 }
+.iconn a:hover {
+    color: white; /* Change text color to white when <a> element is hovered */
+    text-decoration: none; /* Remove underline when <a> element is hovered */
+}
+div.active {
+    background-color: rgb(185, 185, 185);
+}
+
 .text-det {
     font-size: 12px;
     text-align: center;
@@ -282,11 +289,11 @@ body {
     margin-left: -6%;
     /* margin-right: -1%; */
 }
-.text-span{
+.text-span {
     margin-left: 10px;
     font-size: 20px;
 }
-.text-layer-2{
+.text-layer-2 {
     /* background-color: red; */
     border-radius: 5px;
     margin-left: 15%;
@@ -346,16 +353,16 @@ body {
     border-radius: 15px;
     padding: 5px;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     /* margin-top: -1.5%; */
     /* margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 1%; */
     font-size: 12px;
-} 
+}
 /* //////////////////note:: responsive media query//////////////////// */
 @media (min-width: 1025px) and (max-width: 1366px) and (max-height: 768px) {
-    .text{
+    .text {
         max-width: 130px;
     }
     .horizontal-container {

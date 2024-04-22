@@ -20,7 +20,7 @@
 ::-webkit-scrollbar-thumb {
     background-color: rgb(171, 171, 171);
 }
-body {
+body { 
     margin: 0;
     background-image: url(images/bg6.jpeg);
     background-size: cover;
@@ -237,9 +237,15 @@ body {
     margin-bottom: 3%;
 }
 .iconn:hover {
-    color: white;
     background-color: rgb(91, 206, 254);
-    /* background-color: linear-gradient(to bottom right, red, orange); Red to orange gradient on hover */
+    
+}
+.iconn a:hover {
+    color: white; /* Change text color to white when <a> element is hovered */
+    text-decoration: none; /* Remove underline when <a> element is hovered */
+}
+div.active {
+    background-color: rgb(185, 185, 185);
 }
 .text-det {
     font-size: 12px;
