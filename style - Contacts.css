@@ -87,6 +87,7 @@ body {
     text-decoration: none;
     margin: 5px 2px;
     margin-bottom: 8%;
+    text-decoration: none;
 }
 
 .fa:hover {
@@ -99,8 +100,23 @@ body {
 }
 
 .fa-twitter {
-    background: #55acee;
+    background: #000000;
     color: white;
+}
+
+.fa.fa-twitter::before {
+    content: '𝕏';
+    color: white;
+    margin-left: 3px;
+}
+
+.fa-github {
+    background: #55aceeaf;
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+}
+.fa-github a {
+    text-decoration: none;
 }
 
 .fa-linkedin {
@@ -237,7 +253,6 @@ body {
 }
 .iconn:hover {
     background-color: rgb(91, 206, 254);
-    
 }
 .iconn a:hover {
     color: white; /* Change text color to white when <a> element is hovered */

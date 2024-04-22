@@ -100,8 +100,23 @@ body {
 }
 
 .fa-twitter {
-    background: #55acee;
+    background: #000000;
     color: white;
+}
+
+.fa.fa-twitter::before {
+    content: '𝕏';
+    color: white;
+    margin-left: 3px;
+}
+
+.fa-github {
+    background: #55aceeaf;
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+}
+.fa-github a {
+    text-decoration: none;
 }
 
 .fa-linkedin {
