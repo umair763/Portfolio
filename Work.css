@@ -1,0 +1,399 @@
+/* //////////////////note:: font style/////////////////////// */
+
+
+@font-face {
+    font-family: 'Caros Light';
+    src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot');
+    src: url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.eot?#iefix') format('embedded-opentype'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.woff2') format('woff2'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.woff') format('woff'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.ttf') format('truetype'),
+        url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.svg#Caros Light') format('svg');
+}
+/* //////////////////note:: body/////////////////////// */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(69, 69, 69);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(171, 171, 171);
+}
+body { 
+    margin: 0;
+    background-image: url(images/bg6.jpeg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.borders {
+    /* width: calc(100vw - 8px); */
+    /* width: auto; */
+    /* height: calc(100vh - 8px); */
+    /* height: 100%; */
+    /* margin: 4px; */
+    border: 15px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(128, 0, 128), blue);
+    border-image-slice: 1;
+}
+/* //////////////////note:: left section/////////////////////// */
+
+.main-left-container {
+    /* background-color: rgb(9, 129, 241); */
+    height: auto;
+    margin-left: -2.5%;
+    margin-right: -1%;
+}
+.img-container {
+    /* background-color: yellowgreen; */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -19%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    background-image: url('images/myimg1.jpg');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.left-container {
+    /* z-index: 1; */
+    background-color: whitesmoke;
+    border-radius: 15px;
+    height: 300px;
+    height: auto;
+}
+.name-det-links {
+    text-align: center;
+    justify-content: center;
+    padding-top: 24%;
+    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-weight: bolder;
+    font-size: 20px;
+    height: auto;
+}
+
+.fa {
+    padding: 4px;
+    font-size: 22px;
+    width: 28px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-bottom: 8%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #000000;
+    color: white;
+}
+
+.fa.fa-twitter::before {
+    content: '𝕏';
+    color: white;
+    margin-left: 3px;
+}
+
+.fa-github {
+    background: #55aceeaf;
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+}
+.fa-github a {
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.details {
+    background-color: rgb(224, 224, 224);
+    border-radius: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+
+.span-icon {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* //////////////////note:: icons//////////////////////////// */
+.contained {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+.icon {
+    margin-right: 10px; /* Add margin for spacing */
+    background-color: whitesmoke;
+    margin-left: 1%;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.text {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    font-size: 12px;
+    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-weight: bold;
+}
+.text span {
+    margin-top: 5px;
+    padding-right: 5px;
+    word-break: break-all; /* Break words at any character if needed */
+}
+.straight-line {
+    background-color: rgb(211, 209, 209);
+    height: 1px;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* display: flex; */
+}
+.download-cv-btn {
+    background: linear-gradient(to right, red, orange); /* Orange to red gradient */
+    color: white;
+    font-family: 'Caros Light', sans-serif;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+    padding: 5px 10px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+
+.download-cv-btn:focus {
+    outline: none;
+    background: linear-gradient(to right, orange, red); /* Orange to red gradient */
+}
+.margin-bottom {
+    margin-bottom: 10%;
+    background-color: whitesmoke;
+    height: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* //////////////////note:: extra space invisible//////////////////// */
+/* //////////////////note:: extra space invisible//////////////////// */
+/* //////////////////note:: extra space invisible//////////////////// */
+/* //////////////////note:: extra space invisible//////////////////// */
+
+.extra-gap {
+    background-color: transparent;
+    height: 320px;
+    border-radius: 15px;
+} 
+/* //////////////////note:: Second section//////////////////// */
+
+/* //////////////////note:: horzontal container-1//////////// */
+.outer-horizontal {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.horizontal-container {
+    background-color: whitesmoke;
+    display: flex;
+    margin-top: 20%;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 15px;
+    /* width: 420px; */
+    width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+ 
+.iconn {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 4.5cap; */
+    align-items: flex-end; /* Align items to the right */
+    background-color: rgb(224, 224, 224);
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    margin-top: 3%;
+    margin-left: 2px;
+    margin-right: 2px; 
+    margin-bottom: 3%;
+}
+.iconn:hover {
+    background-color: rgb(91, 206, 254);
+    
+}
+.iconn a:hover {
+    color: white; /* Change text color to white when <a> element is hovered */
+    text-decoration: none; /* Remove underline when <a> element is hovered */
+}
+div.active {
+    background-color: rgb(185, 185, 185);
+}
+.text-det {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/* ////////////////note:: main section container-2/////////// */
+
+.main-section {
+    position: absolute;
+    top: 23%; /* Adjust as needed */
+    right: 10px; /* Align to the right side of the parent container */
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+.inter-container {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.four-by-four {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 5px;
+}
+.box1-4 {
+    background-color: rgba(91, 205, 254, 0.831);
+    border-radius: 15px;
+    margin-left: -6%;
+    margin-bottom: 6%;
+    /* margin-right: -1%; */
+}
+.box2-3 {
+    background-color: rgba(243, 243, 141, 0.83);
+    border-radius: 15px;
+    margin-left: -6%;
+    /* margin-right: -1%; */
+    margin-bottom: 6%;
+}
+.text-span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.text-layer-2 {
+    /* background-color: red; */
+    border-radius: 5px;
+    margin-left: 15%;
+}
+/* //////////////////////note:: card//////////// */
+.card-body {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 215, 215);
+    border-radius: 15px !important;
+    box-shadow: 0 5px 8px rgba(73, 73, 73, 0.449);
+}
+.image-container {
+    /* background-color: red; */
+    text-align: center;
+    height: 150px;
+    width: 110%;
+    margin-left: -5%;
+    margin-top: -4%;
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+.image-container img {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block;
+    margin: 0;
+}
+.image-container img {
+    transition: transform 0.6s ease; /* Add smooth transition effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.2); /* Zoom the image to 110% of its original size on hover */
+}
+
+.rounded-image {
+    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+    margin-left: 5%;
+}
+.card-text {
+    /* background-color: whitesmoke; */
+    columns: black;
+    margin-top: 5px;
+    margin-left: -5%;
+    padding: 3px;
+    line-height: 4px;
+    font-size: 12px;
+    margin-bottom: -15%;
+    line-height: 15px;
+}
+
+.footer-container {
+    background-color: rgb(224, 224, 224);
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center; 
+    /* margin-top: -1.5%; */
+    /* margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%; */
+    font-size: 12px;
+}
+/* /////////////////note::responsiveness/////////////////// */
+@media (min-width: 1025px) and (max-width: 1366px) and (max-height: 768px) {
+    .text{
+        max-width: 130px;
+    }
+    .horizontal-container {
+        margin-top: 12.5%;
+    }
+    .main-section {
+        top: 24%;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .iconn {
+        width: 4cap;
+    }
+}
+@media screen and (min-width: 1024px) and (min-width: 1025px) {
+    .text span {        
+        word-break: normal;
+    }
+}
+ 
