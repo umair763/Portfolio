@@ -49,7 +49,7 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    background-position: center;
+    background-position: center; 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -19%;
@@ -162,13 +162,12 @@ body {
     flex-direction: column; /* Align items vertically */
     font-size: 12px;
     font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
-    max-width: 155px;
     font-weight: bold;
 }
 .text span {
     margin-top: 5px;
-    word-wrap: break-word; /* Fallback for older browsers */
-    overflow-wrap: break-word; /* Allow long words to wrap */
+    padding-right: 5px;
+    word-break: break-all; /* Break words at any character if needed */
 }
 .straight-line {
     background-color: rgb(211, 209, 209);
@@ -312,7 +311,7 @@ div.active {
 }
 /* //////////////note::second time modification//////////////////////// */
 .box1-4 {
-    /* background-color: rgba(91, 205, 254, 0.831); */
+    /* background-color: rgba(91, 205, 254, 0.15); */
     /* background-color: rgb(224, 224, 224); */
     border-radius: 15px;
     padding: 15px;
@@ -391,7 +390,7 @@ input[type='text']:focus {
     resize: none;
     width: 100%;
     margin-bottom: 10px; /* Adjust the margin as needed */
-    height: 1.5em; /* Adjust the height as needed */
+    height: 3.5em; /* Adjust the height as needed */
     line-height: 1.5em; /* Match the line-height with the height */
     padding: 0; /* Remove any padding */
     background-color: whitesmoke;
@@ -435,3 +434,9 @@ input[type='text']:focus {
         /* max-width: 100%; */
     }
 }
+@media screen and (min-width: 1024px) and (min-width: 1025px) {
+    .text span {        
+        word-break: normal;
+    }
+}
+ 

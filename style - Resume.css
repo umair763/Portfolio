@@ -162,13 +162,12 @@ body {
     flex-direction: column; /* Align items vertically */
     font-size: 12px;
     font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
-    max-width: 155px;
     font-weight: bold;
-}
+} 
 .text span {
     margin-top: 5px;
-    word-wrap: break-word; /* Fallback for older browsers */
-    overflow-wrap: break-word; /* Allow long words to wrap */
+    padding-right: 5px;
+    word-break: break-all; /* Break words at any character if needed */
 }
 .straight-line {
     background-color: rgb(211, 209, 209);
@@ -402,6 +401,11 @@ p {
         width: 4cap;
     }
 }
-
+@media screen and (min-width: 1024px) and (min-width: 1025px) {
+    .text span {        
+        word-break: normal;
+    }
+}
+ 
 /* ////////////note:: horizontals percentage bars///////////////////////////// */
  
